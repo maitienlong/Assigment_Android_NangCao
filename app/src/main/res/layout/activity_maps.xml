@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context=".MapsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/inputLocation"
+            android:hint="Nhập vị trí bạn cần tìm ?"
+            android:layout_width="320dp"
+            android:layout_height="60dp"/>
+        <ImageView
+            android:onClick="btnSearch"
+            android:padding="16dp"
+            android:src="@drawable/search"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="470dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtLat"
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:text="19.362475" />
+
+        <EditText
+            android:id="@+id/edtLng"
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:text="105.4621947" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edtNameLoaction"
+        android:hint="Nhập tên vị trí"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <Button
+        android:onClick="btnGetLoaction"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Lưu vị trí" />
+</LinearLayout>

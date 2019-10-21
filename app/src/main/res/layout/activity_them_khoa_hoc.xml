@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context=".ThemKhoaHocActivity">
+
+    <EditText
+        android:id="@+id/edtMaKhoaHoc"
+        android:hint="Ma khoa hoc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <EditText
+        android:id="@+id/edtTenKhoaHoc"
+        android:hint="Ten khoa hoc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <EditText
+        android:id="@+id/edtGiaKhoaHoc"
+        android:hint="Gia khoa hoc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <EditText
+        android:id="@+id/edtGiangVien"
+        android:hint="Giang vien khoa hoc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <EditText
+        android:id="@+id/edtNoiDungKhoaHoc"
+        android:hint="Noi dung khoa hoc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <EditText
+        android:id="@+id/edtGhiChuKhoaHoc"
+        android:hint="Ghi chu khoa hoc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <Button
+        android:onClick="btnThemTheLoai"
+        android:text="THEM"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+
+</LinearLayout>
